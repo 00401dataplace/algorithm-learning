@@ -3,16 +3,16 @@
 using namespace std;
 #define _for(i, a, b) for(int i = (a); i < (b); i++) 
 const int maxn = 1e5 + 8;
-int n, i, len[maxn];
+int n, l, len[maxn];
 int solve() {
-    cin >> n >> i;
+    cin >> n >> l;
     _for(i, 0, n) cin >> len[i];
     sort(len, len + n, greater<int>());
     int ans = 0, left = 0, right = n-1;
     while (left <= right) {
         ans++;
         left++;
-        if (left != right && len[left] + len[right] <= 1) right--;
+        if (left != right && len[left] + len[right] <= l) right--;
     }
     return ans;
 }
