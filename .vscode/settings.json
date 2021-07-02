@@ -29,7 +29,9 @@
     "functional": "cpp",
     "tuple": "cpp",
     "type_traits": "cpp",
-    "variant": "cpp"
+    "variant": "cpp",
+    "algorithm": "cpp",
+    "complex": "cpp"
   },
   "C_Cpp.errorSquiggles": "Disabled",
   "python.pythonPath": "C:\\Users\\ASUS\\.conda\\envs\\new_env_3\\python.exe",
